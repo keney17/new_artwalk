@@ -1,0 +1,42 @@
+<manifest alg="2" build="6" opt="true" iceEnabled="true" exportTarget="other" resolutions="1x" timestamp="1415436621636">
+  <folder name="css">
+    <file name="site_global.css" crc="426517801"/>
+    <file name="master_a-master-copy.css" crc="55033110" ref="photo-gallery"/>
+    <file name="master_a-master.css" crc="150127387" ref="map:index"/>
+    <file name="map.css" crc="466629073" ref="map"/>
+    <file name="index.css" crc="4183626631" ref="index"/>
+    <file name="photo-gallery.css" crc="467222241" ref="photo-gallery"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4021225061" ref="index:map:photo-gallery"/>
+    <file name="museutils.js" crc="4136605575" ref="index:map:photo-gallery"/>
+    <file name="jquery.watch.js" crc="172956391" ref="index:map:photo-gallery"/>
+    <file name="webpro.js" crc="420478120" ref="map"/>
+    <file name="musewpdisclosure.js" crc="4228034700" ref="map"/>
+  </folder>
+  <folder name="images">
+    <file name="00-menubar.jpg" crc="3965233249" ref="index:map:photo-gallery"/>
+    <file name="u89-6.png" crc="149921442" ref="index:map"/>
+    <file name="01-gallery.png" crc="459280663" ref="index:map"/>
+    <file name="02-food.png" crc="4082354962" ref="index:map"/>
+    <file name="03-bars.png" crc="3823676142" ref="index:map"/>
+    <file name="04-parking.png" crc="186068343" ref="index:map"/>
+    <file name="05-metro.png" crc="497047364" ref="index:map"/>
+    <file name="u243-4.png" crc="4239317764" ref="index"/>
+    <file name="u244-4.png" crc="4122673574" ref="index"/>
+    <file name="u245-4.png" crc="3950755277" ref="index"/>
+    <file name="u246-4.png" crc="4263593827" ref="index"/>
+    <file name="u247-4.png" crc="333586391" ref="index"/>
+    <file name="u248-4.png" crc="4073946077" ref="index"/>
+    <file name="06-photos.png" crc="101299190" ref="index"/>
+    <file name="07-photogallery.png" crc="4041991536" ref="map"/>
+    <file name="06-location.png" crc="414097357" ref="map"/>
+    <file name="u417-6.png" crc="149921442" ref="photo-gallery"/>
+    <file name="07-camera.png" crc="215906797" ref="photo-gallery"/>
+    <file name="07-back.png" crc="4190470356" ref="photo-gallery"/>
+    <file name="07-photogallery-example.png" crc="7295621" ref="photo-gallery"/>
+  </folder>
+  <file name="index.html" crc="4159491557" mt="1415434422454" redirect="true"/>
+  <file name="map.html" crc="245420899" mt="1415436422012" redirect="true"/>
+  <file name="photo-gallery.html" crc="386404955" mt="1415434450674" redirect="true"/>
+</manifest>

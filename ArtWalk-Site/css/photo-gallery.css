@@ -1,0 +1,111 @@
+.version.photo_gallery /* version checker */
+{
+	color: #00001B;
+	background-color: #D93EE1;
+}
+
+@-ms-viewport
+{
+	width: 750px;
+}
+
+@-webkit-viewport
+{
+	width: 750px;
+}
+
+@-o-viewport
+{
+	width: 750px;
+}
+
+@-moz-viewport
+{
+	width: 750px;
+}
+
+@viewport
+{
+	width: 750px;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 750px;
+	min-height: 994px;
+	background-image: none;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	padding-bottom: 340px;
+}
+
+#pu420
+{
+	width: 0.01px;
+}
+
+#u420
+{
+	z-index: 2;
+	width: 750px;
+	margin-right: -10000px;
+}
+
+#u417-6
+{
+	z-index: 4;
+	margin-right: -10000px;
+	margin-top: 30px;
+	left: 150px;
+}
+
+#u396
+{
+	z-index: 12;
+	width: 104px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 42px;
+	left: 594px;
+}
+
+#u402
+{
+	z-index: 14;
+	width: 113px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 32px;
+	left: 61px;
+}
+
+#u390
+{
+	z-index: 10;
+	width: 700px;
+	background-color: transparent;
+	margin-left: 25px;
+	margin-top: 13px;
+	position: relative;
+}
+
+body
+{
+	position: relative;
+	min-width: 750px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

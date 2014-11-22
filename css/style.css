@@ -1,176 +1,158 @@
-* {
-	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;    
-  	box-sizing: border-box;    
-}
-
-body {
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	background-color: #273a3d;
-	height: 1334px;
-	width: 750px;
+	color: #fff;
 }
 
 #container {
-	/*background-color: white;*/
-	height: 1334px;
-	width: 750px;
+	width: 100%;
+	height: 100%;
 }
 
-#headerArea {
-	height: 185px;
-	width: 750px;
-	position: relative;
+img {
+	height: auto;
+	width: 100%;
 }
 
 #header {
 	background-image: url(images/00-menubar.jpg);
-	height: 185px;
-	width: 750px;
-}
-
-#galleryIcon {
-	background-image: url(images/07-photogallery.png);
-	background-size: 132px 90px;
-	background-repeat: no-repeat;
-	height: 90px;
-	width: 132px;
-	position: absolute;
-	top: 55px;
-	left: 575px;
-}
-
-#locationIcon {
-	background-image: url(images/06-location.png);
-	background-size: 100px 100px;
-	background-repeat: no-repeat;
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	top: 40px;
-	left: 55px;
-}
-
-#backButton {
-	background-image: url(images/07-back.png);
-	background-size: 100px 100px;
-	background-repeat: no-repeat;
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	top: 40px;
-	left: 55px;
-}
-
-#cameraButton {
-	background-image: url(images/07-camera.png);
-	background-size: 100px 100px;
-	background-repeat: no-repeat;
-	height: 100px;
-	width: 100px;
-	position: absolute;
-	top: 45px;
-	left: 585px;
-}
-
-#togglesArea {
-	height: 1149px;
-	width: 750px;
-}
-
-#togglesContainer {
-	/*background-color: blue;*/
-	height: 1049px;
-	width: 550px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 100px;
-}
-
-.toggle {
-	/*background-color: red;*/
-	height: 200px;
-	width: 200px;
-	margin-bottom: 10px;
-}
-
-.toggleDesc {
-	/*background-color: yellow;*/
-	height: 75px;
-	width: 200px;
-	color: white;
+	height: 15%;
+	width: 100%;
 	text-align: center;
-	margin-bottom: 30px;
-	font-size: 32px;	
 }
 
-#toggleDescL {
-	clear: both;
+#header header {
 	float: left;
+	display: block;
 }
 
-#toggleDescR {
-	float: right;
+#header h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 40px;
+	line-height: 36px;
+	padding-top: 16px;
+	width: 100%;
 }
 
+#header img {
+	height: auto;
+	width: 90%;
+}
 
-#toggle1 {
-	background-image: url(images/01-gallery.png);
+#location {
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 15px;
 	float: left;
+	width: 80px;
+	height: 80px;
 }
 
-#toggle2 {
-	background-image: url(images/02-food.png);
+#gallery {
+	display: inline-block;
+	margin-right: 5%;
+	margin-top: 24px;
 	float: right;
+	width: 80px;
+	height: 80px;
 }
 
-#toggle3 {
-	background-image: url(images/03-bars.png);
-	clear: both;
+#back {
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 15px;
 	float: left;
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	margin-top: 14px;
 }
 
-#toggle4 {
-	background-image: url(images/04-parking.png);
+#camera {
+	display: inline-block;
+	margin-right: 5%;
+	margin-top: 17px;
 	float: right;
+	width: 80px;
+	height: 80px;
 }
 
-#toggle5 {
-	background-image: url(images/05-metro.png);
-	clear: both;
-	float: left;
-}
-
-#toggle6 {
-	background-image: url(images/06-photos.png);
-	float: right;
-}
-
-#mapArea {
-	height: 1149px;
-	width: 750px;
-}
-
-#mapContainer {
-	height: 1149px;
-	width: 750px;
-}
-#map_canvas {
-	height: 1149px;
-	width: 750px;
-}
-
-#galleryArea {
-	background-color: white;
-	height: 1149px;
-	width: 750px;
-}
-
-#galleryContainer {
-	/*background-color: red;*/
-	background-image: url(images/07-photogallery-example.png);
-	height: 1149px;
-	width: 650px;
+#container {
+	width: 100%;
+	height: 85%;
 	margin-right: auto;
 	margin-left: auto;
 }
 
+.togglesArea {
+	width: 80%;
+	height: 90%;
+	margin: auto;
+	padding-top: 2.5%;
+}
+
+#toggle img {
+	padding: 7.5%;
+	width: 35%;
+	height: 35%;
+	float: left;
+}
+
+#description h2 {
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.mapArea {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#map_canvas{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+.galleryContainer {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#galleryArea{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: #fff;
+}
+
+@media screen and (max-width: 1440px) {
+	/*body { background-color: blue; }*/
+	#container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	/*body { background-color: red; }*/
+	#container {
+		width: 100%;
+	}
+
+@media screen and (max-width: 500px) {
+	/*body { background-color: yellow; }*/
+	#container {
+		width: 100%;
+	}
+}

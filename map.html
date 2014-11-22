@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
     <!-- Google Maps Script -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -23,27 +20,25 @@
   
   <body>
 
-<!-- Content -->
-    <div id="container">
-      <div id="headerArea">
-        <div id="header"></div>
-        <a href="#"><div id="locationIcon"></div></a>
-        <a href="gallery.html"><div id="galleryIcon"></div></a>
+    <div id="header">
+      <div id="location">
+        <a href="#"><img src="images/06-location.png"></a>
       </div>
-      <div id="mapArea">
-        <div id="mapContainer">
-        <!-- Map Div -->
-          <div id="map_canvas"></div>
-
-        </div>
+      <header><h1>Downtown<br>Artwalk</h1></header>
+      <div id="gallery">
+        <a href="gallery.html"><img src="images/07-photogallery.png"></a>
       </div>
     </div>
+    <div id="container">
+        
+        <div class="mapArea">
+          <div id="map_canvas"></div>
+        </div>
+          
+    </div>
 
-<!-- Scripts -->
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   </body>
 </html>

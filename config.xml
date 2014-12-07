@@ -4,9 +4,9 @@
 		id        = "keneysu.com"
 		versionCode="1"
 		version   = "1.0">
-		<name>OVRLAY EDIT</name>
+		<name>Downtown Artwalk</name>
 		<description> 
-			A simple overlay photo edit application.
+			An application for the LA Art Walk.
 		</description>
 		<author href="keneysu.com" email="keney17@gmail.com">
 			Keney Su

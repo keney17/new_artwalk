@@ -8,11 +8,9 @@ function onDeviceReady() {
 	});
 }
 
-function getPicture() {
 navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.DATA_URL
 });
-}
 
 function onSuccess(imageData) {
     var image = document.getElementById('myImage');

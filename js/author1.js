@@ -11,11 +11,11 @@ function onDeviceReady() {
 function getPicture() {
 	navigator.camera.getPicture(onSuccess, onFail, { 
 		quality: 50,
-	    destinationType: Camera.DestinationType.DATA_URL, 
+	    destinationType: Camera.DestinationType.FILE_URI, 
 	    saveToPhotoAlbum: true,
 	    
 	    // Select Photo From Album
-	    sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
+	    // sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
 
 	});
 

@@ -2,30 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" charset="utf-8" src="js/phonegap.js"></script>
-    <script type="text/javascript" charset="utf-8">
-
-    function DOMLoaded() {
-    document.addEventListener("deviceready", phonegapLoaded, false);
-    }
-    function phonegapLoaded() {
-
-    }
-    function takePicture() {
-        navigator.camera.getPicture(onSuccess,onFail,{ quality: 70, destinationType: Camera.DestinationType.FILE_URI, sourceType: Camera.PictureSourceType.PHOTOLIBRARY, encodingType: Camera.EncodingType.JPEG});
-    }
-    function takeCamera() {
-        navigator.camera.getPicture(onSuccess,onFail,{ quality: 70, destinationType: Camera.DestinationType.FILE_URI, sourceType: Camera.PictureSourceType.CAMERA, encodingType: Camera.EncodingType.JPEG});
-    }
-    function onSuccess(imageURI) {
-        var image = document.getElementById('image');
-        image.src = imageURI;
-        image.style.display = 'block';
-    }
-    function onFail(message) {
-        alert('Failed because: ' + message);
-    }
-
+    <link rel="stylesheet" type="text/css" href="author.css">
+    <script src="phonegap.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/author.js"></script>
     </script>
   </head>
   

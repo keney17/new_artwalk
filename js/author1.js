@@ -12,8 +12,7 @@ function getPicture() {
 	navigator.camera.getPicture(onSuccess, onFail, { 
 		quality: 50,
 	    destinationType: Camera.DestinationType.DATA_URL, 
-	    sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
-	    saveToPhotoAlbum: true
+	    sourceType : Camera.PictureSourceType.PHOTOLIBRARY
 	});
 
 	function onSuccess(imageData) {

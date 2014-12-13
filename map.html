@@ -6,15 +6,155 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       function initialize() {
-        var mapCanvas = document.getElementById('map_canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(34.013313, -118.420189),
-          zoom: 17,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+              var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(34.0432451, -118.2525108)
+              }
+              var map = new google.maps.Map(document.getElementById('map_canvas'),
+                                            mapOptions);
+
+              google.maps.event.addDomListener(window, 'load', initialize);
+              setMarkers(map, metro, bar, gallery, food, parking);
+            }
+      var metro = [
+        ['5th / Broadway', 34.0476483,-118.2504055, 1],
+        ['Maple / 8th', 34.0404474,-118.2502982, 2],
+        ['Main / Pico', 34.036091,-118.2602116, 3],
+        ['Little Tokyo Gold Line Station', 34.0502264,-118.2358061, 4],
+        ['MTA Division 1', 34.0367532,-118.2382094, 5]
+      ];
+
+      var gallery = [
+        ['The Hive', 34.0410412,-118.2535153, 1],
+        ['Center for Digital Art', 34.0479905,-118.2470472, 2],
+        ['Cronulla Beach', 34.04574,-118.248961, 3],
+        ['Manly Beach', 34.048517,-118.2480711, 4],
+        ['Maroubra Beach', 34.0527883,-118.2478106, 5]
+      ];
+      var food = [
+        ['Coles', 34.0448698,-118.2494243, 1],
+        ['New Moon Restaurant', 34.0423183,-118.2563934, 2],
+        ['Garage Pizza', 34.043916,-118.2513844, 3],
+        ['Tonys Burgers', 34.0425027,-118.2482002, 4],
+        ['Delish Sandwich Shop', 34.0412077,-118.2540006, 5]
+      ];
+      var bar = [
+        ['The Falls', 34.045125,-118.251289, 1],
+        ['Silo Vodka Bar', 34.0451093,-118.2529529, 2],
+        ['Los Angeles Brewing Company', 34.0438233,-118.254385, 3],
+        ['Seven Bar Lounge', 34.0472134,-118.2564362, 4],
+        ['Gallery Bar', 34.0498126,-118.2539376, 5]
+      ];
+      var parking = [
+        ['Paragon Parking', 34.0440411,-118.2521825, 1],
+        ['ABM Parking Services', 34.0475472,-118.2524604, 2],
+        ['Joes Auto Parks', 34.0431416,-118.2502631, 3],
+        ['7th Broadway Parking Corporation', 34.0448624,-118.2528605, 4],
+        ['Central Parking', 34.0479583,-118.2556866, 5]
+      ];
+
+      function setMarkers(map, metro_new, bar_new, gallery_new, food_new, parking_new) {
+
+              var imageParking = {
+                url: 'images/icons/parking-icon.png',
+                size: new google.maps.Size(20, 20),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(0, 20)
+              };
+              var imageGallery = {
+                url: 'images/icons/galleries-icon.png',
+                size: new google.maps.Size(20, 20),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(0, 20)
+              };
+              var imageFood = {
+                url: 'images/icons/food-icon.png',
+                size: new google.maps.Size(20, 20),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(0, 20)
+              };
+              var imageMetro = {
+                url: 'images/icons/metro-icon.png',
+                size: new google.maps.Size(20, 20),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(0, 20)
+              };
+              var imageBar = {
+                url: 'images/icons/bars-icon.png',
+                size: new google.maps.Size(20, 20),
+                origin: new google.maps.Point(0,0),
+                anchor: new google.maps.Point(0, 20)
+              };
+
+              var shape = {
+                  coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+                  type: 'poly'
+              };
+
+              for (var i = 0; i < metro_new.length; i++) {
+                var metro = metro_new[i];
+                var myLatLng = new google.maps.LatLng(metro[1], metro[2]);
+                var markerFood = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: imageMetro,
+                    shape: shape,
+                    title: metro[0],
+                    zIndex: metro[3]
+                });
+              }
+              for (var i = 0; i < bar_new.length; i++) {
+                var bar = bar_new[i];
+                var myLatLng = new google.maps.LatLng(bar[1], bar[2]);
+                var markerGallery = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: imageBar,
+                    shape: shape,
+                    title: bar[0],
+                    zIndex: bar[3]
+                });
+              }
+            
+            for (var i = 0; i < gallery_new.length; i++) {
+                var gallery = gallery_new[i];
+                var myLatLng = new google.maps.LatLng(gallery[1], gallery[2]);
+                var markerGallery = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: imageGallery,
+                    shape: shape,
+                    title: gallery[0],
+                    zIndex: gallery[3]
+                });
+              }
+              for (var i = 0; i < food_new.length; i++) {
+                var food = food_new[i];
+                var myLatLng = new google.maps.LatLng(food[1], food[2]);
+                var markerGallery = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: imageFood,
+                    shape: shape,
+                    title: food[0],
+                    zIndex: food[3]
+                });
+              }
+                for (var i = 0; i < parking_new.length; i++) {
+                var parking = parking_new[i];
+                var myLatLng = new google.maps.LatLng(parking[1], parking[2]);
+                var markerGallery = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: imageParking,
+                    shape: shape,
+                    title: parking[0],
+                    zIndex: parking[3]
+                });
+              }
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);    
+
     </script>
   </head>
   

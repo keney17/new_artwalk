@@ -25,6 +25,7 @@ function getPicture() {
 	function onSuccess(imageData) {
 	    var image = document.getElementById('myImage');
 	    image.src = "data:image/jpeg;base64," + imageData;
+	    Camera.PictureSourceType.PHOTOLIBRARY
 	}
 
 	function onFail(message) {

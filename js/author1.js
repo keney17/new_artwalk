@@ -12,6 +12,9 @@ function getPicture() {
 	navigator.camera.getPicture(onSuccess, onFail, { 
 		quality: 50,
 	    destinationType: Camera.DestinationType.FILE_URI, 
+	    sourceType : Camera.PictureSourceType.CAMERA,
+	    encodingType: Camera.EncodingType.JPEG,
+	    popoverOptions: CameraPopoverOptions,
 	    saveToPhotoAlbum: true,
 	    
 	    // Select Photo From Album

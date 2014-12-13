@@ -18,17 +18,13 @@ function getPicture() {
 	    saveToPhotoAlbum: true,
 	    
 	    // Select Photo From Album
-	    // sourceType : Camera.PictureSourceType.PHOTOLIBRARY
+	    // sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
 
 	});
 
 	function onSuccess(imageData) {
 	    var image = document.getElementById('myImage');
 	    image.src = "data:image/jpeg;base64," + imageData;
-
-	    navigator.camera.getPicture() {
-	    	sourceType : Camera.PictureSourceType.PHOTOLIBRARY
-	    }
 	}
 
 	function onFail(message) {

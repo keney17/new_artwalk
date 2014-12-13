@@ -10,7 +10,7 @@ function onDeviceReady() {
 
 function getPicture() {
 	navigator.camera.getPicture(onSuccess, onFail, { 
-		quality: 50,
+		quality: 100,
 	    destinationType: Camera.DestinationType.FILE_URI, 
 	    sourceType : Camera.PictureSourceType.CAMERA,
 	    encodingType: Camera.EncodingType.JPEG,
@@ -18,7 +18,7 @@ function getPicture() {
 	    saveToPhotoAlbum: true,
 	    
 	    // Select Photo From Album
-	    // sourceType : Camera.PictureSourceType.PHOTOLIBRARY,
+	    sourceType : Camera.PictureSourceType.PHOTOLIBRARY
 
 	});
 

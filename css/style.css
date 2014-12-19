@@ -70,7 +70,7 @@ img {
 #location {
 	position: relative;
 	margin-top: 15px;
-	margin-left: -19px;
+	margin-left: -28px;
 	float: left;
 	width: 80px;
 	height: 80px;
@@ -78,7 +78,7 @@ img {
 
 #gallery {
 	position: relative;
-	margin-right: 53px;
+	margin-right: 44px;
 	margin-top: -61px;
 	float: right;
 	width: 80px;
@@ -88,7 +88,7 @@ img {
 #back {
 	position: relative;
 	margin-top: 15px;
-	margin-left: -19px;
+	margin-left: -28px;
 	float: left;
 	width: 80px;
 	height: 80px;
@@ -96,7 +96,7 @@ img {
 
 #camera {
 	position: relative;
-	margin-right: 51px;
+	margin-right: 44px;
 	margin-top: -67px;
 	float: right;
 	width: 80px;
